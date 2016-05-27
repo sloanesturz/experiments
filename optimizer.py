@@ -66,11 +66,12 @@ def solve(K):
 
         print "time", t, "bitrate", br, "buffer", buf, "C", C, "f", f
 
-        g = [0] * (2 * K)
+        g = [0] * (2 * K - 1)
 
         for k in range(K):
             g[k] = t[k] - t[k+1] + CHUNKSIZE * br[k] / C[k]
-            g[K+k] = max(0, max(0, buf[k] - CHUNKSIZE * br[k] / C[k]) + CHUNKSIZE)
+        for k in range(K-1):
+            g[K+k] = max(0, max(0, buf[k] - CHUNKSIZE * br[k] / C[k]) + CHUNKSIZE) - buf[k+1]
         
         fail = 0
         return f, g, fail
@@ -87,7 +88,7 @@ def solve(K):
         opt_qoe.addVar('buf%d' % (2*K + k), type='c', lower=0, upper=30, value=10) # 30 seconds
     
     
-    for i in range(K*2):
+    for i in range(2 * K -1):
         opt_qoe.addCon('g%s' % (i+1), 'e')
     
         
