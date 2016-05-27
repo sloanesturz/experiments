@@ -39,14 +39,13 @@ def C_t(time):
 def solve(K):
     # first numChunks are bitrates, last is startupTime
     def qoe_max(vs):
-        t = vs[0:K+1] # times
-        if any(t[k+1] - t[k] < 1 for k in range(K-1)):
+        t = [0.0] + list(vs[:K]) # times
+        if any(t[k+1] - t[k] < 1 for k in range(K)):
             return None, None, 1
 
-
-        br_i = vs[K+1: K*2+1] #bitrate indices
+        br_i = vs[K: K*2] #bitrate indices
         br = [BITRATES[int(i)-1] for i in br_i]
-        buf = vs[K*2+1: K*3+1]
+        buf = vs[K*2: K*3]
         startupTime = buf[0]
 
         C = [0]* K
@@ -67,20 +66,18 @@ def solve(K):
 
         print "time", t, "bitrate", br, "buffer", buf, "C", C, "f", f
 
-        g = [0] * (2 * K + 1)
+        g = [0] * (2 * K)
 
         for k in range(K):
             g[k] = t[k] - t[k+1] + CHUNKSIZE * br[k] / C[k]
             g[K+k] = max(0, max(0, buf[k] - CHUNKSIZE * br[k] / C[k]) + CHUNKSIZE)
         
-        g[-1] = -t[0]
-
         fail = 0
         return f, g, fail
 
     opt_qoe = pyOpt.Optimization('QOE MAX', qoe_max)
     opt_qoe.addObj('f')
-    for k in range(1, K+1):
+    for k in range(K):
         opt_qoe.addVar('t%d' % k, type='c', lower=0, upper=15, value=1) # right timescale?
 
     for k in range(K):
@@ -93,7 +90,6 @@ def solve(K):
     for i in range(K*2):
         opt_qoe.addCon('g%s' % (i+1), 'e')
     
-    opt_qoe.addCon('g%s' % (i+1), 'e')
         
     #print opt_qoe
     psqp = pyOpt.ALHSO()
