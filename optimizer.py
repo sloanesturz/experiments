@@ -9,7 +9,7 @@ MU_S = 3000
 BITRATES = [3000000, 2000000, 1000000, 600000, 349952]
 
 CHUNKSIZE = 4 * 10**6 # 2 seconds in micro-seconds
-
+CHUNKSIZE = 4
 """
 # sloane wrote
 def solve(throughputs):
@@ -32,7 +32,7 @@ def solve(throughputs):
 """
     
 def C_t(time):
-    return 1.2
+    return 1200000 # 1.2 Mbps
 
 
 # all times are in milliseconds
@@ -40,29 +40,38 @@ def solve(K):
     # first numChunks are bitrates, last is startupTime
     def qoe_max(vs):
         t = vs[0:K+1] # times
-        br = vs[K+1: K*2+1] #bitrates
+        if any(t[k+1] - t[k] < 1 for k in range(K-1)):
+            return None, None, 1
+
+
+        br_i = vs[K+1: K*2+1] #bitrate indices
+        br = [BITRATES[int(i)-1] for i in br_i]
         buf = vs[K*2+1: K*3+1]
         startupTime = buf[0]
 
-        C_k = [0]* K
+        C = [0]* K
 
-        print t, br, buf, startupTime
         for k in range(K):
-            t_k = int(t[k])
-            t_k_1 = int(t[k+1])
-            C_k[k] =  1 / (t_k_1 - t_k) * sum(C_t(dt) for dt in range(t_k, t_k_1))
+            t_k = t[k]
+            t_k_1 = t[k+1]
+            C[k] =  1.0 / (t_k_1 - t_k) * sum(C_t(dt) for dt in range(int(t_k), int(t_k_1)))
         
-        f = sum(br) + \
-            - LAMBDA * sum(abs(br - br_prev) for br, br_prev in zip(br[1:], br)) + \
-            - MU * sum(CHUNKSIZE * br[k] / C_k[k] - buf[k] for k in range(K)) \
+        if any(C[k] == 0 for k in range(K)):
+            return None, None, 1
+        
+        f = sum(br) \
+            - LAMBDA * sum(abs(br - br_prev) for br, br_prev in zip(br[1:], br)) \
+            - MU * sum(CHUNKSIZE * br[k] / C[k] - buf[k] for k in range(K)) \
             - MU_S  * startupTime
         f = -f # maybe?
+
+        print "time", t, "bitrate", br, "buffer", buf, "C", C, "f", f
 
         g = [0] * (2 * K + 1)
 
         for k in range(K):
-            g[k] = t[k] - t[k+1] + CHUNKSIZE * br[k] / C_k[k]
-            g[K+k] = max(0, max(0, buf[k] - CHUNKSIZE * br[k] / C_k[k]) + CHUNKSIZE)
+            g[k] = t[k] - t[k+1] + CHUNKSIZE * br[k] / C[k]
+            g[K+k] = max(0, max(0, buf[k] - CHUNKSIZE * br[k] / C[k]) + CHUNKSIZE)
         
         g[-1] = -t[0]
 
@@ -71,14 +80,14 @@ def solve(K):
 
     opt_qoe = pyOpt.Optimization('QOE MAX', qoe_max)
     opt_qoe.addObj('f')
-    for k in range(K+1):
-        opt_qoe.addVar('t%d' % k, type='c', lower=0, upper=360000, value=1) # right timescale?
+    for k in range(1, K+1):
+        opt_qoe.addVar('t%d' % k, type='c', lower=0, upper=15, value=1) # right timescale?
 
     for k in range(K):
         opt_qoe.addVar('b%d' % (K + k), type='d', choices=BITRATES, value=0)
 
     for k in range(K):
-        opt_qoe.addVar('buf%d' % (2*K + k), type='c', lower=0, upper=30000000, value=10000) # 30 seconds
+        opt_qoe.addVar('buf%d' % (2*K + k), type='c', lower=0, upper=30, value=10) # 30 seconds
     
     
     for i in range(K*2):
@@ -88,16 +97,8 @@ def solve(K):
         
     #print opt_qoe
     psqp = pyOpt.ALHSO()
-
     psqp(opt_qoe, sens_type='FD')
     print opt_qoe.solution(0)
 
-if __name__ == '__main__':
-    throughputs = []
-    with open('ex_throughputs') as f:
-        for line in f:
-            throughputs.append(int(line))
+if __name__ == "__main__":
     solve(2)
-
-    
-    
