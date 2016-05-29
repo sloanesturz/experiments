@@ -1,7 +1,9 @@
+import os
 import sys
 import matplotlib.pyplot as plt
 import re
-import os
+import numpy
+
 
 NUM_CHUNKS = 65
 
@@ -12,9 +14,10 @@ class Plotter:
         self.lambd = 1
         self.mu = 3000
         self.mu_s = 3000
+        self.numPlots = 0
 
-    def parseData(self, filenames):
-        pass
+    def clearQOEs(self):
+        self.QOEs = []
 
     def addQOE(self, filename):
         bitrates, downloadTimes, bufferSizes, startupTime = self.parseRun(filename)
@@ -57,16 +60,50 @@ class Plotter:
         
         return bitrates, downloadTimes, bufferSizes, startupTime
             
-    def normalize(data, opt=None):
+    def normalize(self, data, opt=None):
+        print data
         if not opt:
             opt = max(data)
         return map(lambda d: float(d) / opt, data)
 
-    def plot(self):
-        pass
+    def startPlot(self):
+        fig = plt.figure()        
 
+    def plotOne(self, title):
+        normQOEs = self.normalize(sorted(self.QOEs))
+        cdf = numpy.cumsum(normQOEs)
+
+        plt.subplot(1, 3, self.numPlots)
+        plt.plot(normQOEs, cdf)
+        plt.xlabel('Normalized QOE')
+        plt.ylabel('CDF')
+        plt.title(title)
+
+        self.numPlots += 1
+
+    def savePlot(self, plotname):
+        plt.show()
+        plt.savefig('%s.png' % plotname)
+#        plt.close(fig)
 
 if __name__ == '__main__':
+    if len(sys.argv) != 1:
+        print 'Usage: plotter.py'
+        exit(0)
+    
+    #    dirs = ['output-fcc-traces', 'output-hsdap-traces', 'output-synthetic-traces']
+    dirs = ['test-outputs', 'test-outputs', 'test-outputs']
+    titles = ['FCC', 'HSDPA', 'Synthetic']
+    plotter = Plotter()
+    plotter.startPlot()
+    for dirname, tite in zip(dirs, titles):
+        for filename in os.listdir(dirname):
+            plotter.addQOE(os.path.join(dirname, filename))
+        plotter.plotOne(titles)
+
+    plotter.savePlot('VLC_QOE_Outputs')
+
+'''if __name__ == '__main__':
     if len(sys.argv) != 3:
         print 'Usage: plotter.py <directory name> <output name>'
         exit(0)
@@ -76,5 +113,9 @@ if __name__ == '__main__':
     for filename in os.listdir(dirname):
         plotter.addQOE(os.path.join(dirname, filename))
 
-    plotter.plot(outname)
+    plotter.plot(outname)'''
+
+
+
+
 
