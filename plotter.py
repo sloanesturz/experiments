@@ -97,11 +97,8 @@ if __name__ == '__main__':
     plotter.startPlot()
 
     for dirname, title in zip(dirs, titles):
-        i = 0
         fullDir = topDir + '/' + dirname
         for filename in os.listdir(fullDir):
-            if i == 25:
-                break
             plotter.addQOE(os.path.join(fullDir, filename))
         plotter.plotOne(title)
         plotter.clearQOEs()
