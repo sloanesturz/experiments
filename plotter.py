@@ -2,8 +2,6 @@ import os
 import sys
 import matplotlib.pyplot as plt
 import re
-import numpy
-
 
 NUM_CHUNKS = 65
 
@@ -21,9 +19,7 @@ class Plotter:
 
     def addQOE(self, filename):
         bitrates, downloadTimes, bufferSizes, startupTime = self.parseRun(filename)
-        print startupTime, filename
         numChunks = len(downloadTimes)
-        # assert same?
         quality = variation = rebuffering = 0
         for k in range(numChunks):
             quality += bitrates[k]
@@ -34,7 +30,6 @@ class Plotter:
 
         qoe = quality - self.lambd * variation - self.mu * rebuffering \
                       - self.mu_s * startupTime
-        print qoe
         self.QOEs.append(qoe)
 
     def parseRun(self, filename):
@@ -61,47 +56,57 @@ class Plotter:
         return bitrates, downloadTimes, bufferSizes, startupTime
             
     def normalize(self, data, opt=None):
-        print data
         if not opt:
             opt = max(data)
         return map(lambda d: float(d) / opt, data)
 
     def startPlot(self):
-        fig = plt.figure()        
+        plt.rcParams["figure.figsize"] = [20, 8]
+
 
     def plotOne(self, title):
-        normQOEs = self.normalize(sorted(self.QOEs))
-        cdf = numpy.cumsum(normQOEs)
+        filteredQOEs = sorted(self.QOEs)[5:-5]
 
         plt.subplot(1, 3, self.numPlots)
-        plt.plot(normQOEs, cdf)
-        plt.xlabel('Normalized QOE')
-        plt.ylabel('CDF')
+        plt.plot(filteredQOEs, 'o')
+        plt.tick_params(
+            axis='x',          
+            which='both',      
+            bottom='off',      
+            top='off',
+            labelbottom='off')
+        plt.ylabel('QOE value')
         plt.title(title)
 
         self.numPlots += 1
 
     def savePlot(self, plotname):
-        plt.show()
-        plt.savefig('%s.png' % plotname)
-#        plt.close(fig)
+        plt.savefig(plotname)
+        plt.close()
 
 if __name__ == '__main__':
-    if len(sys.argv) != 1:
-        print 'Usage: plotter.py'
+    if len(sys.argv) != 2:
+        print 'Usage: plotter.py <directory-name>'
         exit(0)
+
+    topDir = sys.argv[1].replace('/', '')
     
-    #    dirs = ['output-fcc-traces', 'output-hsdap-traces', 'output-synthetic-traces']
-    dirs = ['test-outputs', 'test-outputs', 'test-outputs']
+    dirs = ['output-fcc-traces', 'output-hsdpa-traces', 'output-synthetic-traces']
     titles = ['FCC', 'HSDPA', 'Synthetic']
     plotter = Plotter()
     plotter.startPlot()
-    for dirname, tite in zip(dirs, titles):
-        for filename in os.listdir(dirname):
-            plotter.addQOE(os.path.join(dirname, filename))
-        plotter.plotOne(titles)
 
-    plotter.savePlot('VLC_QOE_Outputs')
+    for dirname, title in zip(dirs, titles):
+        i = 0
+        fullDir = topDir + '/' + dirname
+        for filename in os.listdir(fullDir):
+            if i == 25:
+                break
+            plotter.addQOE(os.path.join(fullDir, filename))
+        plotter.plotOne(title)
+        plotter.clearQOEs()
+
+    plotter.savePlot(topDir + '/VLC_QOE_Outputs.png')
 
 '''if __name__ == '__main__':
     if len(sys.argv) != 3:

@@ -1,0 +1,374 @@
+[0000000001701548] core interface error: no suitable interface module
+[000000000163a338] core libvlc error: interface "globalhotkeys,none" initialization failed
+[0000000001701548] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[0000000001701548] core interface error: no suitable interface module
+[000000000163a338] core libvlc error: interface "dbus,none" initialization failed
+[000000000163a338] core libvlc: Running vlc with the default interface. Use 'cvlc' to use vlc without interface.
+[0000000001701548] qt interface error: Could not connect to X server
+[0000000001701548] skins2 interface error: cannot initialize OSFactory
+[0000000001701548] [cli] lua interface: Listening on host "*console".
+VLC media player 3.0.0-git Vetinari
+Command Line Interface initialized. Type `help' for help.
+> [00007fa518003378] ps mux: Open
+making a DASHManager
+new ratebased adaptionlogic
+Chunk bitrate: 0 349952
+Buffer size: 0 0
+Chunk bitrate: 0 349952
+Buffer size: 0 0
+[00007fa518025828] mp4 demux: Fragment sequence discontinuity detected 0 != 2
+Download Time: 853717
+[00007fa518027a68] mp4 demux: Fragment sequence discontinuity detected 0 != 2
+Startup Time: 1050000
+Chunk bitrate: 0 349952
+Buffer size: 1 4001
+Download Time: 1016262
+Chunk bitrate: 1 600000
+Buffer size: 1 8001
+Chunk bitrate: 1 600000
+Buffer size: 2 8001
+Download Time: 1460084
+Chunk bitrate: 2 600000
+Buffer size: 3 12001
+Download Time: 1133543
+Chunk bitrate: 3 600000
+Buffer size: 4 16001
+Download Time: 890725
+Chunk bitrate: 4 349952
+Buffer size: 4 20001
+Chunk bitrate: 4 349952
+Buffer size: 5 20001
+Download Time: 1656838
+Chunk bitrate: 5 600000
+Buffer size: 5 24001
+Chunk bitrate: 5 600000
+Buffer size: 6 24001
+Download Time: 1426722
+Chunk bitrate: 6 349952
+Buffer size: 6 28001
+Chunk bitrate: 6 349952
+Buffer size: 7 28001
+Download Time: 610661
+Chunk bitrate: 7 349952
+Buffer size: 8 32001
+Download Time: 927413
+Chunk bitrate: 8 600000
+Buffer size: 8 36001
+Chunk bitrate: 8 600000
+Buffer size: 9 36001
+Download Time: 1510270
+Chunk bitrate: 9 349952
+Buffer size: 9 40001
+Chunk bitrate: 9 349952
+Buffer size: 10 40001
+Download Time: 609070
+Chunk bitrate: 10 1000000
+Buffer size: 10 44001
+Chunk bitrate: 10 1000000
+Buffer size: 11 44001
+Download Time: 1950082
+Chunk bitrate: 11 349952
+Buffer size: 11 48001
+Chunk bitrate: 11 349952
+Buffer size: 12 48001
+Download Time: 1541670
+Chunk bitrate: 12 349952
+Buffer size: 13 52001
+Download Time: 976510
+Chunk bitrate: 13 349952
+Buffer size: 14 56001
+Download Time: 849627
+Chunk bitrate: 14 600000
+Buffer size: 14 60001
+Chunk bitrate: 14 600000
+Buffer size: 15 60001
+Download Time: 1200406
+Chunk bitrate: 15 600000
+Buffer size: 16 64001
+Download Time: 1586046
+Chunk bitrate: 16 349952
+Buffer size: 16 68001
+Chunk bitrate: 16 349952
+Buffer size: 17 68001
+Download Time: 605893
+Chunk bitrate: 17 600000
+Buffer size: 17 72001
+Chunk bitrate: 17 600000
+Buffer size: 18 72001
+Download Time: 1057227
+Chunk bitrate: 18 1000000
+Buffer size: 18 76001
+Chunk bitrate: 18 1000000
+Buffer size: 19 76001
+Download Time: 1199230
+Chunk bitrate: 19 349952
+Buffer size: 19 80001
+Chunk bitrate: 19 349952
+Buffer size: 20 80001
+Download Time: 931993
+Chunk bitrate: 20 349952
+Buffer size: 21 84001
+Download Time: 1461857
+Chunk bitrate: 21 600000
+Buffer size: 21 88001
+Chunk bitrate: 21 600000
+Buffer size: 22 88001
+Download Time: 1344620
+Chunk bitrate: 22 600000
+Buffer size: 23 92001
+Download Time: 1140009
+Chunk bitrate: 23 349952
+Buffer size: 23 96001
+Chunk bitrate: 23 349952
+Buffer size: 24 96001
+Download Time: 732529
+Chunk bitrate: 24 600000
+Buffer size: 24 100001
+Chunk bitrate: 24 600000
+Buffer size: 25 100001
+Download Time: 935328
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180d7be8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 25 600000
+Buffer size: 26 104001
+Download Time: 1054684
+Chunk bitrate: 26 1000000
+Buffer size: 26 108001
+Chunk bitrate: 26 1000000
+Buffer size: 27 108001
+Download Time: 1139842
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180d2ea8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 27 600000
+Buffer size: 27 112001
+Chunk bitrate: 27 600000
+Buffer size: 28 112001
+Download Time: 1182770
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180e55b8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 28 1000000
+Buffer size: 28 116001
+Chunk bitrate: 28 1000000
+Buffer size: 29 116001
+Download Time: 1460670
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa51811d458] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 29 600000
+Buffer size: 29 120001
+Chunk bitrate: 29 600000
+Buffer size: 30 120001
+Download Time: 1493036
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180da6c8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 30 349952
+Buffer size: 30 124001
+Chunk bitrate: 30 349952
+Buffer size: 31 124001
+Download Time: 609866
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180a28d8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 31 349952
+Buffer size: 32 128001
+Download Time: 772839
+Chunk bitrate: 32 600000
+Buffer size: 32 132001
+Chunk bitrate: 32 600000
+Buffer size: 33 132001
+Download Time: 1265286
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180ed308] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 33 349952
+Buffer size: 33 136001
+Chunk bitrate: 33 349952
+Buffer size: 34 136001
+Download Time: 695076
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180cb098] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 34 600000
+Buffer size: 34 140001
+Chunk bitrate: 34 600000
+Buffer size: 35 140001
+Download Time: 936200
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180f2ca8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 35 349952
+Buffer size: 35 144001
+Chunk bitrate: 35 349952
+Buffer size: 36 144001
+Download Time: 773240
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa51804bad8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 36 600000
+Buffer size: 36 148001
+Chunk bitrate: 36 600000
+Buffer size: 37 148001
+Download Time: 1180119
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180febf8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 37 349952
+Buffer size: 37 152001
+Chunk bitrate: 37 349952
+Buffer size: 38 152001
+Download Time: 854697
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180c4848] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 38 1000000
+Buffer size: 38 156001
+Chunk bitrate: 38 1000000
+Buffer size: 39 156001
+Download Time: 1382495
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa51812aa78] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 39 600000
+Buffer size: 39 160001
+Chunk bitrate: 39 600000
+Buffer size: 40 160001
+Download Time: 1060391
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180f54e8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 40 349952
+Buffer size: 40 164001
+Chunk bitrate: 40 349952
+Buffer size: 41 164001
+Download Time: 643451
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180e2448] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 41 600000
+Buffer size: 41 168001
+Chunk bitrate: 41 600000
+Buffer size: 42 168001
+Download Time: 1263737
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5181079e8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 42 349952
+Buffer size: 42 172001
+Chunk bitrate: 42 349952
+Buffer size: 43 172001
+Download Time: 687654
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180c6658] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 43 600000
+Buffer size: 43 176001
+Chunk bitrate: 43 600000
+Buffer size: 44 176001
+Download Time: 1263866
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa51810cca8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 44 349952
+Buffer size: 44 180001
+Chunk bitrate: 44 349952
+Buffer size: 45 180001
+Download Time: 1793169
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180e3bf8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 45 349952
+Buffer size: 46 184001
+Download Time: 978168
+Chunk bitrate: 46 600000
+Buffer size: 46 188001
+Chunk bitrate: 46 600000
+Buffer size: 47 188001
+Download Time: 858149
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518110ac8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 47 349952
+Buffer size: 47 192001
+Chunk bitrate: 47 349952
+Buffer size: 48 192001
+Download Time: 816025
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180eaf38] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 48 349952
+Buffer size: 49 196001
+Download Time: 692815
+Chunk bitrate: 49 600000
+Buffer size: 49 200001
+Chunk bitrate: 49 600000
+Buffer size: 50 200001
+Download Time: 1511748
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518120618] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 50 600000
+Buffer size: 51 204001
+Download Time: 1183820
+Chunk bitrate: 51 600000
+Buffer size: 52 208001
+Download Time: 1345094
+Chunk bitrate: 52 349952
+Buffer size: 52 212001
+Chunk bitrate: 52 349952
+Buffer size: 53 212001
+Download Time: 612151
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518103d38] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 53 600000
+Buffer size: 53 216001
+Chunk bitrate: 53 600000
+Buffer size: 54 216001
+Download Time: 855575
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518125fd8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 54 349952
+Buffer size: 54 220001
+Chunk bitrate: 54 349952
+Buffer size: 55 220001
+Download Time: 856268
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518111998] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 55 600000
+Buffer size: 55 224001
+Chunk bitrate: 55 600000
+Buffer size: 56 224001
+Download Time: 1348086
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa51812f918] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 56 349952
+Buffer size: 56 228001
+Chunk bitrate: 56 349952
+Buffer size: 57 228001
+Download Time: 782032
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518103a98] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 57 600000
+Buffer size: 57 232001
+Chunk bitrate: 57 600000
+Buffer size: 58 232001
+Download Time: 978409
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518044878] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 58 349952
+Buffer size: 58 236001
+Download Time: 565031
+Chunk bitrate: 58 349952
+Buffer size: 59 236001
+Download Time: 897094
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180c70e8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 59 349952
+Buffer size: 60 240001
+Download Time: 775178
+Chunk bitrate: 60 349952
+Buffer size: 61 244001
+Download Time: 781058
+Chunk bitrate: 61 600000
+Buffer size: 61 248001
+Chunk bitrate: 61 600000
+Buffer size: 62 248001
+Download Time: 576235
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa518102a58] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 62 349952
+Buffer size: 62 252001
+Chunk bitrate: 62 349952
+Buffer size: 63 252001
+Download Time: 324577
+[00007fa518003378] core mux error: cannot add this stream
+[00007fa5180c2ee8] core decoder error: cannot create packetizer output (h264)
+Chunk bitrate: 63 349952
+Buffer size: 64 256001
+Download Time: 528631
+Chunk bitrate: 64 349952
+Buffer size: 65 260001
+[00007fa518003378] ps mux: Close
+[00007fa5140010a8] idummy demux: command `quit'
+[0000000001701548] [cli] lua interface error: Error loading script /home/cs244/vlc/share/lua/intf/cli.luac: lua/intf/modules/host.lua:286: Interrupted.

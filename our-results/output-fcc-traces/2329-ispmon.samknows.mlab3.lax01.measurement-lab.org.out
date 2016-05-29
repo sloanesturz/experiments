@@ -1,0 +1,236 @@
+[0000000000faa1e8] core interface error: no suitable interface module
+[0000000000ee1338] core libvlc error: interface "globalhotkeys,none" initialization failed
+[0000000000faa1e8] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[0000000000faa1e8] core interface error: no suitable interface module
+[0000000000ee1338] core libvlc error: interface "dbus,none" initialization failed
+[0000000000ee1338] core libvlc: Running vlc with the default interface. Use 'cvlc' to use vlc without interface.
+[0000000000faa1e8] qt interface error: Could not connect to X server
+[0000000000faa1e8] skins2 interface error: cannot initialize OSFactory
+[0000000000faa1e8] [cli] lua interface: Listening on host "*console".
+VLC media player 3.0.0-git Vetinari
+Command Line Interface initialized. Type `help' for help.
+> [00007fafb4003378] ps mux: Open
+making a DASHManager
+new ratebased adaptionlogic
+Chunk bitrate: 0 349952
+Buffer size: 0 0
+Chunk bitrate: 0 349952
+Buffer size: 0 0
+[00007fafb40251d8] mp4 demux: Fragment sequence discontinuity detected 0 != 2
+Download Time: 293481
+[00007fafb40216c8] mp4 demux: Fragment sequence discontinuity detected 0 != 2
+Startup Time: 1050000
+Chunk bitrate: 0 3000000
+Buffer size: 0 4001
+Chunk bitrate: 0 3000000
+Buffer size: 1 4001
+Download Time: 2269802
+Chunk bitrate: 1 3000000
+Buffer size: 2 8001
+Download Time: 1902435
+Chunk bitrate: 2 3000000
+Buffer size: 3 12001
+Download Time: 1265279
+Chunk bitrate: 3 3000000
+Buffer size: 4 16001
+Download Time: 973000
+Chunk bitrate: 4 3000000
+Buffer size: 5 20001
+Download Time: 1245040
+Chunk bitrate: 5 3000000
+Buffer size: 6 24001
+Download Time: 844932
+Chunk bitrate: 6 3000000
+Buffer size: 7 28001
+Download Time: 833852
+Chunk bitrate: 7 3000000
+Buffer size: 8 32001
+Download Time: 1310328
+Chunk bitrate: 8 3000000
+Buffer size: 9 36001
+Download Time: 959276
+Chunk bitrate: 9 3000000
+Buffer size: 10 40001
+Download Time: 1105699
+Chunk bitrate: 10 3000000
+Buffer size: 11 44001
+Download Time: 962069
+Chunk bitrate: 11 3000000
+Buffer size: 12 48001
+Download Time: 2245807
+Chunk bitrate: 12 3000000
+Buffer size: 13 52001
+Download Time: 2224796
+Chunk bitrate: 13 3000000
+Buffer size: 14 56001
+Download Time: 1880782
+Chunk bitrate: 14 3000000
+Buffer size: 15 60001
+Download Time: 1774479
+Chunk bitrate: 15 3000000
+Buffer size: 16 64001
+Download Time: 2131065
+Chunk bitrate: 16 3000000
+Buffer size: 17 68001
+Download Time: 913529
+Chunk bitrate: 17 3000000
+Buffer size: 18 72001
+Download Time: 1140473
+Chunk bitrate: 18 3000000
+Buffer size: 19 76001
+Download Time: 646696
+Chunk bitrate: 19 3000000
+Buffer size: 20 80001
+Download Time: 984213
+Chunk bitrate: 20 3000000
+Buffer size: 21 84001
+Download Time: 606352
+Chunk bitrate: 21 3000000
+Buffer size: 22 88001
+Download Time: 892156
+Chunk bitrate: 22 3000000
+Buffer size: 23 92001
+Download Time: 1175421
+Chunk bitrate: 23 3000000
+Buffer size: 24 96001
+Download Time: 1045061
+Chunk bitrate: 24 3000000
+Buffer size: 25 100001
+Download Time: 1030388
+Chunk bitrate: 25 3000000
+Buffer size: 26 104001
+Download Time: 974664
+Chunk bitrate: 26 3000000
+Buffer size: 27 108001
+Download Time: 1066104
+Chunk bitrate: 27 3000000
+Buffer size: 28 112001
+Download Time: 1944015
+Chunk bitrate: 28 3000000
+Buffer size: 29 116001
+Download Time: 2414984
+Chunk bitrate: 29 3000000
+Buffer size: 30 120001
+Download Time: 1506788
+Chunk bitrate: 30 3000000
+Buffer size: 31 124001
+Download Time: 1525459
+Chunk bitrate: 31 3000000
+Buffer size: 32 128001
+Download Time: 1963430
+Download Time: 27049
+Chunk bitrate: 32 3000000
+Buffer size: 33 132001
+Download Time: 1163381
+Chunk bitrate: 33 3000000
+Buffer size: 34 136001
+Download Time: 1135937
+Chunk bitrate: 34 3000000
+Buffer size: 35 140001
+Download Time: 1036155
+Chunk bitrate: 35 3000000
+Buffer size: 36 144001
+Download Time: 834084
+Chunk bitrate: 36 3000000
+Buffer size: 37 148001
+Download Time: 1240752
+Chunk bitrate: 37 3000000
+Buffer size: 38 152001
+Download Time: 1172585
+Chunk bitrate: 38 3000000
+Buffer size: 39 156001
+Download Time: 1014111
+Chunk bitrate: 39 3000000
+Buffer size: 40 160001
+Download Time: 869369
+Chunk bitrate: 40 3000000
+Buffer size: 41 164001
+Download Time: 1616355
+Chunk bitrate: 41 3000000
+Buffer size: 42 168001
+Download Time: 1945348
+Chunk bitrate: 42 3000000
+Buffer size: 43 172001
+Download Time: 3076705
+Chunk bitrate: 43 1000000
+Buffer size: 43 176001
+Chunk bitrate: 43 1000000
+Buffer size: 44 176001
+Download Time: 1866023
+Chunk bitrate: 44 1000000
+Buffer size: 45 180001
+Download Time: 1957733
+Chunk bitrate: 45 2000000
+Buffer size: 45 184001
+Chunk bitrate: 45 2000000
+Buffer size: 46 184001
+Download Time: 2280128
+Chunk bitrate: 46 2000000
+Buffer size: 47 188001
+Download Time: 1940221
+Chunk bitrate: 47 2000000
+Buffer size: 48 192001
+Download Time: 2727024
+Chunk bitrate: 48 1000000
+Buffer size: 48 196001
+Chunk bitrate: 48 1000000
+Buffer size: 49 196001
+Download Time: 1880108
+Chunk bitrate: 49 1000000
+Buffer size: 50 200001
+Download Time: 1761344
+Chunk bitrate: 50 1000000
+Buffer size: 51 204001
+Download Time: 1426405
+Chunk bitrate: 51 1000000
+Buffer size: 52 208001
+Download Time: 1796662
+Chunk bitrate: 52 1000000
+Buffer size: 53 212001
+Download Time: 1025449
+Chunk bitrate: 53 2000000
+Buffer size: 53 216001
+Chunk bitrate: 53 2000000
+Buffer size: 54 216001
+Download Time: 2237668
+Chunk bitrate: 54 2000000
+Buffer size: 55 220001
+Download Time: 3185963
+Chunk bitrate: 55 600000
+Buffer size: 55 224001
+Chunk bitrate: 55 600000
+Buffer size: 56 224001
+Download Time: 2159601
+Chunk bitrate: 56 600000
+Buffer size: 57 228001
+Download Time: 1209927
+Chunk bitrate: 57 1000000
+Buffer size: 57 232001
+Chunk bitrate: 57 1000000
+Buffer size: 58 232001
+Download Time: 559839
+Chunk bitrate: 58 1000000
+Buffer size: 59 236001
+Download Time: 2122236
+Chunk bitrate: 59 1000000
+Buffer size: 60 240001
+Download Time: 1559483
+Chunk bitrate: 60 3000000
+Buffer size: 60 244001
+Chunk bitrate: 60 3000000
+Buffer size: 61 244001
+Download Time: 954244
+Chunk bitrate: 61 3000000
+Buffer size: 62 248001
+Download Time: 321810
+Chunk bitrate: 62 3000000
+Buffer size: 63 252001
+Download Time: 226628
+Chunk bitrate: 63 3000000
+Buffer size: 64 256001
+Download Time: 411435
+Chunk bitrate: 64 3000000
+Buffer size: 65 260001
+[00007fafb4003378] ps mux: Close
+[00007fafb408b9f8] idummy demux: command `quit'
+[0000000000faa1e8] [cli] lua interface error: Error loading script /home/cs244/vlc/share/lua/intf/cli.luac: lua/intf/modules/host.lua:286: Interrupted.

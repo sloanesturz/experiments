@@ -1,0 +1,128 @@
+[000000000237a1e8] core interface error: no suitable interface module
+[00000000022b1338] core libvlc error: interface "globalhotkeys,none" initialization failed
+[000000000237a1e8] dbus interface error: Failed to connect to the D-Bus session daemon: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[000000000237a1e8] core interface error: no suitable interface module
+[00000000022b1338] core libvlc error: interface "dbus,none" initialization failed
+[00000000022b1338] core libvlc: Running vlc with the default interface. Use 'cvlc' to use vlc without interface.
+[000000000237a1e8] qt interface error: Could not connect to X server
+[000000000237a1e8] skins2 interface error: cannot initialize OSFactory
+[000000000237a1e8] [cli] lua interface: Listening on host "*console".
+VLC media player 3.0.0-git Vetinari
+Command Line Interface initialized. Type `help' for help.
+> [00007fbb90003378] ps mux: Open
+making a DASHManager
+new ratebased adaptionlogic
+Chunk bitrate: 0 349952
+Buffer size: 0 0
+Chunk bitrate: 0 349952
+Buffer size: 0 0
+[00007fbb900234f8] mp4 demux: Fragment sequence discontinuity detected 0 != 2
+Download Time: 735006
+[00007fbb90026d38] mp4 demux: Fragment sequence discontinuity detected 0 != 2
+Startup Time: 1050000
+Chunk bitrate: 0 1000000
+Buffer size: 0 4001
+Chunk bitrate: 0 1000000
+Buffer size: 1 4001
+Download Time: 2014750
+Chunk bitrate: 1 1000000
+Buffer size: 2 8001
+Download Time: 1464643
+Chunk bitrate: 2 1000000
+Buffer size: 3 12001
+Download Time: 1583164
+Chunk bitrate: 3 1000000
+Buffer size: 4 16001
+Download Time: 1312259
+Chunk bitrate: 4 1000000
+Buffer size: 5 20001
+Download Time: 1712443
+Chunk bitrate: 5 1000000
+Buffer size: 6 24001
+Download Time: 897848
+Chunk bitrate: 6 2000000
+Buffer size: 6 28001
+Chunk bitrate: 6 2000000
+Buffer size: 7 28001
+Download Time: 1752233
+Chunk bitrate: 7 2000000
+Buffer size: 8 32001
+Download Time: 2788900
+Chunk bitrate: 8 1000000
+Buffer size: 8 36001
+Chunk bitrate: 8 1000000
+Buffer size: 9 36001
+Download Time: 1839868
+Chunk bitrate: 9 1000000
+Buffer size: 10 40001
+Download Time: 1606231
+Chunk bitrate: 10 1000000
+Buffer size: 11 44001
+Download Time: 1564478
+Chunk bitrate: 11 1000000
+Buffer size: 12 48001
+Download Time: 1729427
+Chunk bitrate: 12 1000000
+Buffer size: 13 52001
+Download Time: 1552020
+Chunk bitrate: 13 1000000
+Buffer size: 14 56001
+Download Time: 1171181
+Chunk bitrate: 14 2000000
+Buffer size: 14 60001
+Chunk bitrate: 14 2000000
+Buffer size: 15 60001
+Download Time: 1825946
+Chunk bitrate: 15 2000000
+Buffer size: 16 64001
+Download Time: 2193911
+Chunk bitrate: 16 2000000
+Buffer size: 17 68001
+Download Time: 2346218
+Chunk bitrate: 17 1000000
+Buffer size: 17 72001
+Chunk bitrate: 17 1000000
+Buffer size: 18 72001
+Download Time: 1540640
+Chunk bitrate: 18 1000000
+Buffer size: 19 76001
+Download Time: 851433
+Chunk bitrate: 19 1000000
+Buffer size: 20 80001
+Download Time: 1457499
+Chunk bitrate: 20 1000000
+Buffer size: 21 84001
+Download Time: 947958
+Chunk bitrate: 21 1000000
+Buffer size: 22 88001
+Download Time: 1317228
+Chunk bitrate: 22 1000000
+Buffer size: 23 92001
+Download Time: 1546138
+Chunk bitrate: 23 2000000
+Buffer size: 23 96001
+Chunk bitrate: 23 2000000
+Buffer size: 24 96001
+Download Time: 2084700
+Chunk bitrate: 24 2000000
+Buffer size: 25 100001
+Download Time: 2067375
+Chunk bitrate: 25 2000000
+Buffer size: 26 104001
+Download Time: 2491309
+Chunk bitrate: 26 1000000
+Buffer size: 26 108001
+Chunk bitrate: 26 1000000
+Buffer size: 27 108001
+Download Time: 799562
+Chunk bitrate: 27 1000000
+Buffer size: 28 112001
+Download Time: 1574313
+Chunk bitrate: 28 1000000
+Buffer size: 29 116001
+Download Time: 1523715
+Chunk bitrate: 29 1000000
+Buffer size: 30 120001
+[00007fbb90003378] ps mux: Close
+[00007fbb9c001288] idummy demux: command `quit'
+[000000000237a1e8] [cli] lua interface error: Error loading script /home/cs244/vlc/share/lua/intf/cli.luac: lua/intf/modules/host.lua:286: Interrupted.
