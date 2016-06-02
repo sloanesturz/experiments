@@ -43,7 +43,7 @@ def runTest(output_root):
         count = 0
         for filename in os.listdir(dirname):
             count += 1
-            trace = os.path.join("/home/cs244/experiments", dirname, filename)
+            trace = os.path.join("~", "experiments", dirname, filename)
             output = os.path.join(output_dir, filename + ".out")
             if not os.path.isfile(output):
                 port = (port + 1) % 3
